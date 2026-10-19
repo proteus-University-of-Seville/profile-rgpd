@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- First-level objects of the references category -->
+<objects>
+  <object id="glossary-item" />
+  <object id="bibliography-item" />
+  <object id="symbolic-link" />
+</objects>

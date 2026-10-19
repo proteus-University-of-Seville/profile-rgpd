@@ -1,0 +1,37 @@
+/* ======================================================= */
+/* File    : glossary_item.css                             */
+/* Content : Default CSS for Proteus (glossary items)      */
+/* Author  : Amador Durán Toro                             */
+/* Date    : 2026/09/14                                    */
+/* Version : 2.0                                           */
+/* ======================================================= */
+
+.glossary_item p {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+/* Further paragraphs of the description (it may have several): they are
+   indented as the continuation lines of the first one, without the hanging
+   indent of the paragraph that starts with the name of the item */
+.glossary_item p ~ p {
+  text-indent: 0;
+}
+
+.glossary_item p p {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.glossary_item_name {
+  font-weight: bold;
+}
+
+/*
+.glossary_item_description {}
+.glossary_item_synonyms {}
+*/
+
+.glossary_item_figure {
+  padding-left: 2em;
+}

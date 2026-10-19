@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="rat-video" classes="traceable-object processing-activity" acceptedChildren="legal-basis special-category-exception international-transfer risk" acceptedParents=":Proteus-document section">
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[RAT-]]></prefix>
+      <number>002</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general" tooltip="processing-activity-name"><![CDATA[Videovigilancia de las instalaciones]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-10-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="purposes" category="general" tooltip="purposes"><![CDATA[Garantizar la seguridad de las personas, los bienes y las instalaciones.]]></markdownProperty>
+    <traceProperty name="controller" category="general" tooltip="controller" acceptedTargets="data-controller" maxTargetsNumber="1" traceType=":Proteus-dependency">
+      <trace target="rat-responsable" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <traceProperty name="data-subjects" category="data" tooltip="data-subjects" acceptedTargets="data-subject-category" traceType=":Proteus-dependency">
+      <trace target="int-empleados" traceType=":Proteus-dependency"/>
+      <trace target="int-visitantes" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <traceProperty name="data-categories" category="data" tooltip="data-categories" acceptedTargets="data-category" traceType=":Proteus-dependency">
+      <trace target="dat-imagen" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <traceProperty name="recipients" category="data" tooltip="recipients" acceptedTargets="recipient" traceType=":Proteus-dependency">
+      <trace target="dst-seguridad" traceType=":Proteus-dependency"/>
+      <trace target="dst-fcs" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <markdownProperty name="retention" category="retention-security" tooltip="retention"><![CDATA[Un mes desde la grabación, salvo que deban conservarse para acreditar un delito (art. 22.3 LOPDGDD).]]></markdownProperty>
+    <traceProperty name="security-measures" category="retention-security" tooltip="security-measures" acceptedTargets="security-measure" traceType=":Proteus-dependency">
+      <trace target="med-grabaciones" traceType=":Proteus-dependency"/>
+      <trace target="med-formacion" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <booleanProperty name="automated-decisions" category="assessment" tooltip="automated-decisions">false</booleanProperty>
+    <enumProperty name="dpia-required" category="assessment" tooltip="dpia-required" valueTooltips="true" choices="tbd yes no">no</enumProperty>
+    <enumProperty name="status" category="assessment" choices="draft active withdrawn">active</enumProperty>
+    <dateProperty name="review-date" category="assessment">2026-10-18</dateProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="bj-video"/>
+    <child id="rsg-video"/>
+  </children>
+</object>

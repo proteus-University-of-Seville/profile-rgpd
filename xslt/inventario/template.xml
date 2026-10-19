@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- RGPD profile view. It reuses the core and the resources of the default -->
+<!-- template; localized strings are retrieved with proteus-utils:i18n().   -->
+<template name="inventario">
+    <entryPoints default="inventario.xsl"/>
+    <dependencies>
+        <pluginDependency name="basic"/>
+    </dependencies>
+</template>

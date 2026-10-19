@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object
+  id="special-category-exception"
+  classes="special-category-exception"
+  acceptedChildren=":Proteus-none"
+  acceptedParents="processing-activity"
+>
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Excepción para categorías especiales de datos]]></stringProperty>
+    <enumProperty name="exception-type" category="general" tooltip="exception-type" valueTooltips="true" choices="tbd art-9-2-a art-9-2-b art-9-2-c art-9-2-d art-9-2-e art-9-2-f art-9-2-g art-9-2-h art-9-2-i art-9-2-j">tbd</enumProperty>
+    <markdownProperty name="justification" category="general" tooltip="exception-justification"><![CDATA[]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+
+  <children>
+  </children>
+</object>

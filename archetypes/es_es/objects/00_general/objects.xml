@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- First-level objects of the general category -->
+<objects>
+  <object id="section" />
+  <object id="appendix" />
+  <object id="paragraph" />
+  <object id="comment" />
+  <object id="local-figure" />
+  <object id="remote-figure" />
+  <object id="organization" />
+  <object id="stakeholder" />
+  <object id="meeting" />
+  <object id="traceability-matrix" />
+</objects>

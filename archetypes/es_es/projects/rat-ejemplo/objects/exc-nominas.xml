@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="exc-nominas" classes="special-category-exception" acceptedChildren=":Proteus-none" acceptedParents="processing-activity">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Bajas por incapacidad temporal]]></stringProperty>
+    <enumProperty name="exception-type" category="general" tooltip="exception-type" valueTooltips="True" choices="tbd art-9-2-a art-9-2-b art-9-2-c art-9-2-d art-9-2-e art-9-2-f art-9-2-g art-9-2-h art-9-2-i art-9-2-j">art-9-2-b</enumProperty>
+    <markdownProperty name="justification" category="general" tooltip="exception-justification"><![CDATA[Tratamiento de las bajas por incapacidad temporal para cumplir las obligaciones de Seguridad Social.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

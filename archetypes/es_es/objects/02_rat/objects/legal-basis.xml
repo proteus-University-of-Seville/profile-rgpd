@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object
+  id="legal-basis"
+  classes="legal-basis"
+  acceptedChildren=":Proteus-none"
+  acceptedParents="processing-activity"
+>
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Base jurídica]]></stringProperty>
+    <enumProperty name="legal-basis-type" category="general" tooltip="legal-basis-type" valueTooltips="true" choices="tbd consent contract legal-obligation vital-interests public-interest legitimate-interest">tbd</enumProperty>
+    <stringProperty name="enabling-law" category="general" tooltip="enabling-law"><![CDATA[]]></stringProperty>
+    <markdownProperty name="justification" category="general" tooltip="legal-basis-justification"><![CDATA[]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+
+  <children>
+  </children>
+</object>

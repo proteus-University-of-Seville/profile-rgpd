@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# PROTEUS GUI state of projects
+state.yaml
+state.yml
+
+# Logs of the LaTeX export
+.proteus/

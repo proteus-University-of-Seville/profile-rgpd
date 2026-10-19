@@ -1,0 +1,110 @@
+# ==========================================================================
+# File: es_es/basic_archetypes.yaml
+# Description: Traducciones de los arquetipos del perfil básico (español)
+# Date: 2026/09/23
+# Version: 2.0
+# Author: Amador Durán Toro
+# ==========================================================================
+
+# -----------------------------------------------------------------------
+# Categorías de arquetipos (pestañas de la barra de herramientas)
+# -----------------------------------------------------------------------
+
+archetype.category.general: "General"
+archetype.category.references: "Referencias"
+
+# -----------------------------------------------------------------------
+# Clases de arquetipos
+# -----------------------------------------------------------------------
+
+# Categoría general
+
+archetype.class.traceable-object: "Objeto trazable"
+archetype.class.section: "Sección"
+archetype.class.appendix: "Apéndice"
+archetype.class.paragraph: "Párrafo"
+archetype.class.comment: "Comentario"
+archetype.class.glossary-item: "Elemento\nde glosario"
+archetype.class.bibliography-item: "Referencia\nbibliográfica"
+archetype.class.figure: "Figura"
+archetype.class.organization: "Organización"
+archetype.class.stakeholder: "Participante"
+archetype.class.meeting: "Reunión"
+archetype.class.traceability-matrix: "Matriz de\ntrazabilidad"
+archetype.class.symbolic-link: "Enlace\nsimbólico"
+
+# -----------------------------------------------------------------------
+# Categorías de propiedades de arquetipos
+# -----------------------------------------------------------------------
+
+archetype.prop_category.general: "General"
+archetype.prop_category.detail: "Detalle"
+archetype.prop_category.results: "Resultados"
+archetype.prop_category.dependencies: "Dependencias"
+archetype.prop_category.comments: "Comentarios"
+
+# -----------------------------------------------------------------------
+# Opciones de enumerados de arquetipos
+# -----------------------------------------------------------------------
+
+archetype.enum_choices.tbd: "Por determinar"
+archetype.enum_choices.developer: "Desarrollador"
+archetype.enum_choices.user: "Usuario"
+archetype.enum_choices.customer: "Cliente"
+
+# -----------------------------------------------------------------------
+# Mensajes de ayuda de arquetipos
+# -----------------------------------------------------------------------
+
+archetype.tooltip.file-info: "Seleccione un archivo gráfico de su sistema para copiarlo en la carpeta de recursos 'assets' del proyecto."
+archetype.tooltip.width-info: "Porcentaje del ancho de la página que ocupará el recurso."
+
+# -----------------------------------------------------------------------
+# Nombre de propiedades de arquetipos
+# -----------------------------------------------------------------------
+
+"archetype.prop_name.:proteus-code": "Código"
+"archetype.prop_name.:proteus-date": "Fecha"
+archetype.prop_name.address: "Dirección"
+archetype.prop_name.attenders: "Asistentes"
+archetype.prop_name.authors: "Autores"
+archetype.prop_name.category: "Categoría"
+archetype.prop_name.col-classes: "Clases destino (columnas)"
+archetype.prop_name.comments: "Comentarios"
+archetype.prop_name.date: "Fecha"
+archetype.prop_name.dependencies: "Dependencias"
+archetype.prop_name.description: "Descripción"
+archetype.prop_name.email: "Correo-e"
+archetype.prop_name.file: "Archivo"
+archetype.prop_name.image: "Imagen"
+archetype.prop_name.link: "Enlace"
+archetype.prop_name.logo: "Logotipo"
+archetype.prop_name.phone-number: "Teléfono"
+archetype.prop_name.photo: "Fotografía"
+archetype.prop_name.place: "Lugar"
+archetype.prop_name.plural-form: "Forma plural"
+archetype.prop_name.prepared-by: "Preparado por"
+archetype.prop_name.prepared-for: "Preparado para"
+archetype.prop_name.publication_authors: "Autores"
+archetype.prop_name.publication_details: "Detalles de publicación"
+archetype.prop_name.results: "Resultados"
+archetype.prop_name.role: "Rol"
+archetype.prop_name.row-classes: "Clases origen (filas)"
+archetype.prop_name.sources: "Fuentes"
+archetype.prop_name.synonyms: "Sinónimos"
+archetype.prop_name.text: "Texto"
+archetype.prop_name.time: "Hora"
+archetype.prop_name.trace-types: "Tipos de traza"
+archetype.prop_name.url: "URL"
+archetype.prop_name.version: "Versión"
+archetype.prop_name.web: "Sitio web"
+archetype.prop_name.width: "Ancho (%)"
+archetype.prop_name.works-for: "Trabaja para"# Unidades de medida (propiedades unitProperty)
+archetype.enum_units.year: "año"
+archetype.enum_units.month: "mes"
+archetype.enum_units.week: "semana"
+archetype.enum_units.day: "día"
+archetype.enum_units.hour: "hora"
+archetype.enum_units.minute: "minuto"
+archetype.enum_units.second: "segundo"
+archetype.enum_units.millisecond: "milisegundo"

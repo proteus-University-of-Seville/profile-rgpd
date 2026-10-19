@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object
+  id="international-transfer"
+  classes="traceable-object international-transfer"
+  acceptedChildren=":Proteus-none"
+  acceptedParents="processing-activity"
+>
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Transferencia internacional]]></stringProperty>
+    <stringProperty name="country" category="general" tooltip="country"><![CDATA[]]></stringProperty>
+    <traceProperty name="transfer-recipient" category="general" tooltip="transfer-recipient" acceptedTargets="recipient" maxTargetsNumber="1" traceType=":Proteus-dependency"/>
+    <enumProperty name="safeguard" category="general" tooltip="safeguard" valueTooltips="true" choices="tbd adequacy-decision standard-contractual-clauses binding-corporate-rules art-49-derogation">tbd</enumProperty>
+    <markdownProperty name="safeguard-documentation" category="general" tooltip="safeguard-documentation"><![CDATA[]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+
+  <children>
+  </children>
+</object>

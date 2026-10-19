@@ -1,0 +1,40 @@
+/* ======================================================= */
+/* File    : default.css                                   */
+/* Content : Default CSS for Proteus                       */
+/* Author  : Amador Durán Toro                             */
+/* Date    : 2026/09/21                                    */
+/* Version : 2.0                                           */
+/* ======================================================= */
+
+@import url('printing.css');
+@import url('cover.css');
+@import url('toc.css');
+@import url('comment.css');
+@import url('glossary_item.css');
+@import url('bibliography_item.css');
+@import url('figure.css');
+@import url('proteus_table.css');
+@import url('stakeholder.css');
+@import url('organization.css');
+@import url('meeting.css');
+@import url('symbolic_link.css');
+@import url('traceability_matrix.css');
+@import url('rgpd.css');
+
+/* general styles */
+
+body {
+  font-family: calibri, helvetica, cambria, verdana, arial;
+  font-size: 12pt;
+  text-align: justify;
+}
+
+body>div {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+span.tbd {
+  color: red;
+  font-weight: bold;
+}

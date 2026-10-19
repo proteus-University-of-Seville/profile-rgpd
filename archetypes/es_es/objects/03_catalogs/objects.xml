@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Catálogos del registro de actividades de tratamiento -->
+<objects>
+  <object id="data-subjects-students" />
+  <object id="data-subjects-candidates" />
+  <object id="data-subjects-citizens" />
+  <object id="data-subjects-customers" />
+  <object id="data-subjects-employees" />
+  <object id="data-subjects-minors" />
+  <object id="data-subjects-patients" />
+  <object id="data-subjects-suppliers" />
+  <object id="data-subjects-web-users" />
+  <object id="data-subjects-visitors" />
+  <object id="data-subject-category" />
+  <object id="data-category-union" />
+  <object id="data-category-criminal" />
+  <object id="data-category-personal" />
+  <object id="data-category-social" />
+  <object id="data-category-economic" />
+  <object id="data-category-biometric" />
+  <object id="data-category-contact" />
+  <object id="data-category-browsing" />
+  <object id="data-category-health" />
+  <object id="data-category-identifying" />
+  <object id="data-category-employment" />
+  <object id="data-category-education" />
+  <object id="data-category-image" />
+  <object id="data-category" />
+  <object id="recipient-tax-agency" />
+  <object id="recipient-security" />
+  <object id="recipient-banks" />
+  <object id="recipient-police" />
+  <object id="recipient-payroll" />
+  <object id="recipient-courts" />
+  <object id="recipient-mutual" />
+  <object id="recipient-it-provider" />
+  <object id="recipient-social-security" />
+  <object id="recipient" />
+  <object id="security-measure" />
+</objects>

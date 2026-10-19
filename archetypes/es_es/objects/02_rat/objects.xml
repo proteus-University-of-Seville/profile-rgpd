@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Objetos del registro de actividades de tratamiento -->
+<objects>
+  <object id="processing-activity" />
+  <object id="legal-basis" />
+  <object id="special-category-exception" />
+  <object id="international-transfer" />
+  <object id="risk" />
+  <object id="data-controller" />
+  <object id="dpo" />
+  <object id="aepd" />
+  <object id="ctpda" />
+</objects>

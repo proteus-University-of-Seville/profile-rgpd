@@ -1,0 +1,168 @@
+@startuml modelo-conceptual
+' ==========================================================================
+' Modelo conceptual de las clases del perfil RGPD de PROTEUS
+' (las clases heredadas del perfil básico solo se muestran como referencia)
+'
+' Composición  = objetos hijos en el árbol del documento
+' <<trace>>    = propiedad de traza (nombre de la propiedad en la etiqueta)
+' Atributos    = nombre de la propiedad : tipo de propiedad de PROTEUS
+' ==========================================================================
+
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam nodesep 45
+skinparam ranksep 55
+skinparam defaultFontName Arial
+skinparam class {
+  BackgroundColor White
+  BorderColor #A6192E
+  ArrowColor #404040
+  StereotypeFontColor #6B7280
+  BackgroundColor<<basic>> #EEEEEE
+  BorderColor<<basic>> #969696
+}
+skinparam note {
+  BackgroundColor #FAFAFA
+  BorderColor #969696
+}
+hide empty methods
+hide empty fields
+hide circle
+
+title Perfil RGPD — modelo conceptual
+
+' ------------------------------------------------------- perfil básico --
+class "Organización" as Organization <<basic>>
+class "Participante" as Stakeholder <<basic>>
+
+' ------------------------------------------------- pestaña Tratamientos --
+class "Actividad de tratamiento" as ProcessingActivity <<processing-activity>> {
+  {field} :Proteus-code : code (RAT-nnn)
+  purposes : markdown
+  retention : markdown
+  automated-decisions : boolean
+  dpia-required : enum {tbd, yes, no}
+  status : enum {draft, active, withdrawn}
+  review-date : date
+}
+
+class "Base jurídica" as LegalBasis <<legal-basis>> {
+  legal-basis-type : enum {tbd, 6.1.a … 6.1.f}
+  enabling-law : string
+  justification : markdown
+}
+
+class "Excepción (art. 9.2)" as Exception <<special-category-exception>> {
+  exception-type : enum {tbd, 9.2.a … 9.2.j}
+  justification : markdown
+}
+
+class "Transferencia internacional" as Transfer <<international-transfer>> {
+  country : string
+  safeguard : enum {tbd, adequacy-decision,\n  standard-contractual-clauses,\n  binding-corporate-rules, art-49-derogation}
+  safeguard-documentation : markdown
+}
+
+class "Riesgo" as Risk <<risk>> {
+  {field} :Proteus-code : code (RSG-nnn)
+  description : markdown
+  likelihood : enum {tbd, low, medium, high}
+  impact : enum {tbd, minor, major, severe}
+}
+
+class "Responsable del tratamiento" as Controller <<data-controller>> {
+  tax-id : string
+  sector : enum {private, public}
+  rights-exercise : markdown
+}
+
+class "Delegado de protección de datos" as DPO <<dpo>> {
+  public-contact : string
+}
+
+class "Autoridad de control" as Authority <<supervisory-authority>> {
+  complaint-url : url
+}
+
+' ---------------------------------------------------- pestaña Catálogos --
+class "Categoría de interesados" as DataSubjects <<data-subject-category>> {
+  {field} :Proteus-code : code (INT-nnn)
+  description : markdown
+  vulnerable : boolean
+}
+
+class "Categoría de datos" as DataCategory <<data-category>> {
+  {field} :Proteus-code : code (DAT-nnn)
+  data-type : enum {tbd, identifying, contact,\n  economic, professional,\n  personal-characteristics,\n  social-circumstances,\n  special-category, criminal-offences}
+  description : markdown
+}
+
+class "Destinatario" as Recipient <<recipient>> {
+  {field} :Proteus-code : code (DST-nnn)
+  recipient-type : enum {tbd, processor,\n  joint-controller, third-party,\n  public-authority}
+  country : string
+  art28-contract : boolean
+  description : markdown
+}
+
+class "Medida de seguridad" as Measure <<security-measure>> {
+  {field} :Proteus-code : code (MED-nnn)
+  measure-type : enum {tbd, technical, organizational}
+  description : markdown
+  ens-measure : string
+}
+
+' Disposición por filas: perfil básico y responsable arriba a la izquierda,
+' la actividad, sus hijos debajo y los catálogos en la fila inferior.
+
+' -------------------------------------------------------------- herencia --
+Organization <|-- Controller
+Organization <|-- Authority
+Stakeholder <|-- DPO
+
+' ------------------------------------------- hijos de una actividad --
+ProcessingActivity *-- "1..*" LegalBasis
+ProcessingActivity *-- "0..*" Exception
+ProcessingActivity *-- "0..*" Transfer
+ProcessingActivity *-- "0..*" Risk
+
+' ---------------------------------------------------------------- trazas --
+ProcessingActivity -left-> "0..1" Controller : <<trace>>\ncontroller
+ProcessingActivity ---> "0..*" DataSubjects : <<trace>>\ndata-subjects
+ProcessingActivity ---> "0..*" DataCategory : <<trace>>\ndata-categories
+ProcessingActivity ---> "0..*" Recipient : <<trace>>\nrecipients
+ProcessingActivity ---> "0..*" Measure : <<trace>>\nsecurity-measures
+Transfer --> "0..1" Recipient : <<trace>>\ntransfer-recipient
+Risk --> "0..*" Measure : <<trace>>\nmitigated-by
+Recipient -left-> "0..1" Organization : <<trace>>\nentity
+Controller -right-> "0..1" Authority : <<trace>>\nsupervisory-authority
+DPO -up-> "0..1" Organization : <<trace>>\nworks-for
+
+' Orden horizontal de los hijos y de los catálogos
+LegalBasis -[hidden]right- Exception
+Exception -[hidden]right- Transfer
+Transfer -[hidden]right- Risk
+DataSubjects -[hidden]right- DataCategory
+DataCategory -[hidden]right- Recipient
+Recipient -[hidden]right- Measure
+
+' ----------------------------------------------------------------- notas --
+note as N1
+  Todas las clases son **objetos trazables**
+  (traceable-object del perfil básico), salvo
+  la base jurídica y la excepción del art. 9.2.
+end note
+
+note right of Authority
+  Arquetipos: AEPD y Consejo de
+  Transparencia y Protección de
+  Datos de Andalucía
+end note
+
+note bottom of DataCategory
+  Arquetipos de los casos típicos:
+  datos identificativos, de contacto,
+  de salud, biométricos...
+end note
+
+@enduml

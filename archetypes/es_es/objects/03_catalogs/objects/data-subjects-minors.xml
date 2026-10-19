@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="data-subjects-minors" classes="traceable-object data-subject-category" acceptedChildren=":Proteus-none">
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[INT-]]></prefix>
+      <number>001</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general" tooltip="data-subject-category-name"><![CDATA[Menores de edad]]></stringProperty>
+    <dateProperty name=":Proteus-date" category="general">2026-10-18</dateProperty>
+    <stringProperty name="version" category="general"><![CDATA[1.0]]></stringProperty>
+    <traceProperty name="authors" category="general" acceptedTargets="stakeholder" traceType=":Proteus-author"/>
+    <traceProperty name="sources" category="general" acceptedTargets="stakeholder" traceType=":Proteus-information-source"/>
+    <markdownProperty name="description" category="detail"><![CDATA[Menores de edad; los menores de 14 años necesitan el consentimiento de sus padres o tutores (art. 7 LOPDGDD).]]></markdownProperty>
+    <booleanProperty name="vulnerable" category="detail" tooltip="vulnerable">true</booleanProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+
+  <children>
+  </children>
+</object>

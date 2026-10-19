@@ -1,0 +1,247 @@
+# ==========================================================================
+# File: es_es/rgpd_archetypes.yaml
+# Description: Traducciones de los arquetipos del registro de actividades
+#              de tratamiento (RAT) del perfil RGPD
+# Date: 2026/10/18
+# Version: 1.0
+# Author: Amador Durán Toro
+# ==========================================================================
+
+# -----------------------------------------------------------------------
+# Categorías de arquetipos (pestañas de la barra de herramientas)
+# -----------------------------------------------------------------------
+
+archetype.category.rat: "Tratamientos"
+archetype.category.catalogs: "Catálogos"
+
+# -----------------------------------------------------------------------
+# Clases de arquetipos
+# -----------------------------------------------------------------------
+
+archetype.class.processing-activity: "Actividad de\ntratamiento"
+archetype.class.legal-basis: "Base jurídica"
+archetype.class.special-category-exception: "Excepción\n(art. 9.2)"
+archetype.class.international-transfer: "Transferencia\ninternacional"
+archetype.class.risk: "Riesgo"
+archetype.class.data-controller: "Responsable\ntratamiento"
+archetype.class.dpo: "Delegado\nprotección de datos"
+archetype.class.supervisory-authority: "Autoridad\ncontrol"
+
+# Pastilla de las cabeceras de la vista de cláusulas informativas (no es un arquetipo)
+archetype.class.information-clause: "Cláusula\ninformativa"
+archetype.class.data-subject-category: "Categoría\ninteresados"
+archetype.class.data-category: "Categoría\nde datos"
+archetype.class.recipient: "Destinatario"
+archetype.class.security-measure: "Medida de\nseguridad"
+
+# -----------------------------------------------------------------------
+# Categorías de propiedades (pestañas de los formularios)
+# -----------------------------------------------------------------------
+
+archetype.prop_category.data: "Datos personales"
+archetype.prop_category.retention-security: "Conservación y seguridad"
+archetype.prop_category.assessment: "Evaluación"
+archetype.prop_category.rights: "Derechos"
+
+# -----------------------------------------------------------------------
+# Nombres de propiedades
+# -----------------------------------------------------------------------
+
+archetype.prop_name.art28-contract: "Contrato de encargo (art. 28)"
+archetype.prop_name.automated-decisions: "Decisiones automatizadas"
+archetype.prop_name.complaint-url: "Sede electrónica (reclamaciones)"
+archetype.prop_name.controller: "Responsable"
+archetype.prop_name.country: "País"
+archetype.prop_name.data-categories: "Categorías de datos"
+archetype.prop_name.data-subjects: "Categorías de interesados"
+archetype.prop_name.data-type: "Tipo de datos"
+archetype.prop_name.dpia-required: "Requiere evaluación de impacto (EIPD)"
+archetype.prop_name.enabling-law: "Norma habilitante"
+archetype.prop_name.ens-measure: "Medida del ENS"
+archetype.prop_name.entity: "Entidad"
+archetype.prop_name.exception-type: "Supuesto (art. 9.2)"
+archetype.prop_name.impact: "Impacto"
+archetype.prop_name.justification: "Justificación"
+archetype.prop_name.legal-basis-type: "Supuesto (art. 6.1)"
+archetype.prop_name.likelihood: "Probabilidad"
+archetype.prop_name.measure-type: "Tipo de medida"
+archetype.prop_name.mitigated-by: "Mitigado por"
+archetype.prop_name.public-contact: "Contacto público"
+archetype.prop_name.purposes: "Finalidades"
+archetype.prop_name.recipient-type: "Tipo de destinatario"
+archetype.prop_name.recipients: "Destinatarios"
+archetype.prop_name.retention: "Plazo de conservación"
+archetype.prop_name.review-date: "Fecha de revisión"
+archetype.prop_name.rights-exercise: "Ejercicio de derechos"
+archetype.prop_name.safeguard: "Garantía"
+archetype.prop_name.safeguard-documentation: "Documentación de la garantía"
+archetype.prop_name.sector: "Sector"
+archetype.prop_name.security-measures: "Medidas de seguridad"
+archetype.prop_name.status: "Estado"
+archetype.prop_name.supervisory-authority: "Autoridad de control"
+archetype.prop_name.tax-id: "NIF"
+archetype.prop_name.transfer-recipient: "Destinatario"
+archetype.prop_name.vulnerable: "Colectivo vulnerable"
+
+# -----------------------------------------------------------------------
+# Opciones de enumerados
+# -----------------------------------------------------------------------
+
+# Sí / no
+archetype.enum_choices.yes: "Sí"
+archetype.enum_choices.no: "No"
+
+# Estado de la actividad
+archetype.enum_choices.draft: "Borrador"
+archetype.enum_choices.active: "Vigente"
+archetype.enum_choices.withdrawn: "Dada de baja"
+
+# Bases jurídicas (art. 6.1 RGPD)
+archetype.enum_choices.consent: "6.1.a Consentimiento"
+archetype.enum_choices.contract: "6.1.b Ejecución de un contrato"
+archetype.enum_choices.legal-obligation: "6.1.c Obligación legal"
+archetype.enum_choices.vital-interests: "6.1.d Intereses vitales"
+archetype.enum_choices.public-interest: "6.1.e Interés público o poderes públicos"
+archetype.enum_choices.legitimate-interest: "6.1.f Interés legítimo"
+
+# Excepciones para categorías especiales (art. 9.2 RGPD)
+archetype.enum_choices.art-9-2-a: "9.2.a Consentimiento explícito"
+archetype.enum_choices.art-9-2-b: "9.2.b Ámbito laboral y de la seguridad social"
+archetype.enum_choices.art-9-2-c: "9.2.c Intereses vitales"
+archetype.enum_choices.art-9-2-d: "9.2.d Entidades sin ánimo de lucro"
+archetype.enum_choices.art-9-2-e: "9.2.e Datos hechos manifiestamente públicos"
+archetype.enum_choices.art-9-2-f: "9.2.f Reclamaciones y función judicial"
+archetype.enum_choices.art-9-2-g: "9.2.g Interés público esencial"
+archetype.enum_choices.art-9-2-h: "9.2.h Medicina preventiva, laboral y asistencia sanitaria"
+archetype.enum_choices.art-9-2-i: "9.2.i Interés público en salud pública"
+archetype.enum_choices.art-9-2-j: "9.2.j Archivo, investigación o estadística"
+
+# Garantías de las transferencias internacionales
+archetype.enum_choices.adequacy-decision: "Decisión de adecuación (art. 45)"
+archetype.enum_choices.standard-contractual-clauses: "Cláusulas contractuales tipo (art. 46)"
+archetype.enum_choices.binding-corporate-rules: "Normas corporativas vinculantes (art. 47)"
+archetype.enum_choices.art-49-derogation: "Excepción para situaciones específicas (art. 49)"
+
+# Probabilidad e impacto de los riesgos
+archetype.enum_choices.low: "Baja"
+archetype.enum_choices.medium: "Media"
+archetype.enum_choices.high: "Alta"
+archetype.enum_choices.minor: "Leve"
+archetype.enum_choices.major: "Grave"
+archetype.enum_choices.severe: "Muy grave"
+
+# Sector del responsable
+archetype.enum_choices.private: "Privado"
+archetype.enum_choices.public: "Público"
+
+# Tipos de datos
+archetype.enum_choices.identifying: "Identificativos"
+archetype.enum_choices.contact: "De contacto"
+archetype.enum_choices.economic: "Económicos, financieros y de seguros"
+archetype.enum_choices.professional: "Académicos y profesionales"
+archetype.enum_choices.personal-characteristics: "Características personales"
+archetype.enum_choices.social-circumstances: "Circunstancias sociales"
+archetype.enum_choices.special-category: "Categoría especial (art. 9)"
+archetype.enum_choices.criminal-offences: "Condenas e infracciones penales (art. 10)"
+
+# Tipos de destinatarios
+archetype.enum_choices.processor: "Encargado del tratamiento"
+archetype.enum_choices.joint-controller: "Corresponsable"
+archetype.enum_choices.third-party: "Cesionario (tercero)"
+archetype.enum_choices.public-authority: "Autoridad pública"
+
+# Tipos de medidas
+archetype.enum_choices.technical: "Técnica"
+archetype.enum_choices.organizational: "Organizativa"
+
+# -----------------------------------------------------------------------
+# Ayudas de las opciones de enumerados (valueTooltips="true")
+# -----------------------------------------------------------------------
+
+archetype.enum_choices.tooltip.dpia-required.tbd: "Todavía no se ha analizado si el tratamiento requiere una evaluación de impacto."
+archetype.enum_choices.tooltip.dpia-required.yes: "El tratamiento entraña un alto riesgo (art. 35 RGPD y listas de la AEPD) y requiere una evaluación de impacto."
+archetype.enum_choices.tooltip.dpia-required.no: "Analizado el tratamiento, no se requiere una evaluación de impacto."
+
+archetype.enum_choices.tooltip.legal-basis-type.tbd: "Por determinar."
+archetype.enum_choices.tooltip.legal-basis-type.consent: "El interesado dio su consentimiento para el tratamiento de sus datos para uno o varios fines específicos."
+archetype.enum_choices.tooltip.legal-basis-type.contract: "El tratamiento es necesario para ejecutar un contrato en el que el interesado es parte o para aplicar medidas precontractuales a petición suya."
+archetype.enum_choices.tooltip.legal-basis-type.legal-obligation: "El tratamiento es necesario para cumplir una obligación legal aplicable al responsable. Indique la norma habilitante."
+archetype.enum_choices.tooltip.legal-basis-type.vital-interests: "El tratamiento es necesario para proteger intereses vitales del interesado o de otra persona física."
+archetype.enum_choices.tooltip.legal-basis-type.public-interest: "El tratamiento es necesario para cumplir una misión realizada en interés público o en el ejercicio de poderes públicos. Indique la norma habilitante."
+archetype.enum_choices.tooltip.legal-basis-type.legitimate-interest: "El tratamiento es necesario para satisfacer intereses legítimos del responsable o de un tercero que prevalecen sobre los derechos del interesado. No aplicable a las autoridades públicas en el ejercicio de sus funciones."
+
+archetype.enum_choices.tooltip.exception-type.tbd: "Por determinar."
+archetype.enum_choices.tooltip.exception-type.art-9-2-a: "El interesado dio su consentimiento explícito para uno o varios fines especificados."
+archetype.enum_choices.tooltip.exception-type.art-9-2-b: "Cumplimiento de obligaciones y ejercicio de derechos en el ámbito del derecho laboral y de la seguridad y protección social."
+archetype.enum_choices.tooltip.exception-type.art-9-2-c: "Protección de intereses vitales del interesado o de otra persona, si el interesado no puede dar su consentimiento."
+archetype.enum_choices.tooltip.exception-type.art-9-2-d: "Actividades legítimas de fundaciones, asociaciones u otros organismos sin ánimo de lucro, referidas a sus miembros."
+archetype.enum_choices.tooltip.exception-type.art-9-2-e: "Datos que el interesado ha hecho manifiestamente públicos."
+archetype.enum_choices.tooltip.exception-type.art-9-2-f: "Formulación, ejercicio o defensa de reclamaciones, o actuación de los tribunales."
+archetype.enum_choices.tooltip.exception-type.art-9-2-g: "Razones de un interés público esencial, sobre la base de una norma con rango de ley."
+archetype.enum_choices.tooltip.exception-type.art-9-2-h: "Medicina preventiva o laboral, evaluación de la capacidad laboral, diagnóstico médico o asistencia sanitaria o social."
+archetype.enum_choices.tooltip.exception-type.art-9-2-i: "Razones de interés público en el ámbito de la salud pública."
+archetype.enum_choices.tooltip.exception-type.art-9-2-j: "Fines de archivo en interés público, de investigación científica o histórica o estadísticos."
+
+archetype.enum_choices.tooltip.safeguard.tbd: "Por determinar."
+archetype.enum_choices.tooltip.safeguard.adequacy-decision: "La Comisión Europea ha decidido que el país garantiza un nivel de protección adecuado."
+archetype.enum_choices.tooltip.safeguard.standard-contractual-clauses: "El contrato con el importador de los datos incluye las cláusulas contractuales tipo aprobadas por la Comisión Europea."
+archetype.enum_choices.tooltip.safeguard.binding-corporate-rules: "El grupo empresarial dispone de normas corporativas vinculantes aprobadas por una autoridad de control."
+archetype.enum_choices.tooltip.safeguard.art-49-derogation: "Excepción para situaciones específicas, como el consentimiento explícito del interesado o la ejecución de un contrato. Documente la excepción aplicada."
+
+archetype.enum_choices.tooltip.data-type.tbd: "Por determinar."
+archetype.enum_choices.tooltip.data-type.identifying: "Nombre, apellidos, DNI o NIE, firma, imagen, voz..."
+archetype.enum_choices.tooltip.data-type.contact: "Dirección postal, teléfono, correo electrónico..."
+archetype.enum_choices.tooltip.data-type.economic: "Datos bancarios, ingresos, nóminas, seguros..."
+archetype.enum_choices.tooltip.data-type.professional: "Formación, titulaciones, experiencia profesional, puesto de trabajo..."
+archetype.enum_choices.tooltip.data-type.personal-characteristics: "Fecha de nacimiento, sexo, nacionalidad, estado civil..."
+archetype.enum_choices.tooltip.data-type.social-circumstances: "Vivienda, aficiones, pertenencia a asociaciones..."
+archetype.enum_choices.tooltip.data-type.special-category: "Origen étnico, opiniones políticas, convicciones religiosas, afiliación sindical, datos genéticos, biométricos, de salud o sobre la vida u orientación sexual. Requiere una excepción del art. 9.2."
+archetype.enum_choices.tooltip.data-type.criminal-offences: "Datos relativos a condenas e infracciones penales (art. 10 RGPD)."
+
+archetype.enum_choices.tooltip.recipient-type.tbd: "Por determinar."
+archetype.enum_choices.tooltip.recipient-type.processor: "Trata datos por cuenta del responsable. Requiere un contrato de encargo (art. 28 RGPD)."
+archetype.enum_choices.tooltip.recipient-type.joint-controller: "Determina conjuntamente con el responsable los fines y medios del tratamiento (art. 26 RGPD)."
+archetype.enum_choices.tooltip.recipient-type.third-party: "Recibe los datos para sus propios fines (cesión o comunicación de datos)."
+archetype.enum_choices.tooltip.recipient-type.public-authority: "Administraciones, juzgados y tribunales u otras autoridades que reciben los datos por obligación legal."
+
+# -----------------------------------------------------------------------
+# Mensajes de ayuda de las propiedades
+# -----------------------------------------------------------------------
+
+archetype.tooltip.processing-activity-name: "Nombre breve de la actividad de tratamiento, p. ej. «Gestión de nóminas» o «Videovigilancia»."
+archetype.tooltip.purposes: "Para qué se tratan los datos personales (art. 30.1.b RGPD)."
+archetype.tooltip.controller: "Responsable del tratamiento (art. 30.1.a RGPD)."
+archetype.tooltip.data-subjects: "Categorías de personas cuyos datos se tratan (art. 30.1.c RGPD)."
+archetype.tooltip.data-categories: "Categorías de datos personales tratados (art. 30.1.c RGPD)."
+archetype.tooltip.recipients: "Categorías de destinatarios a quienes se comunican los datos, incluidos los de terceros países (art. 30.1.d RGPD)."
+archetype.tooltip.retention: "Plazo previsto para la supresión de las diferentes categorías de datos (art. 30.1.f RGPD)."
+archetype.tooltip.security-measures: "Medidas técnicas y organizativas de seguridad (art. 30.1.g y art. 32 RGPD)."
+archetype.tooltip.automated-decisions: "Hay decisiones automatizadas o perfiles (art. 22 RGPD)."
+archetype.tooltip.dpia-required: "Si el tratamiento requiere una evaluación de impacto relativa a la protección de datos (art. 35 RGPD)."
+archetype.tooltip.legal-basis-type: "Condición de licitud del tratamiento (art. 6.1 RGPD)."
+archetype.tooltip.enabling-law: "Norma con rango de ley que habilita el tratamiento (obligatoria para las bases de obligación legal y de interés público)."
+archetype.tooltip.legal-basis-justification: "Explicación de por qué se aplica esta base jurídica; para el interés legítimo, resumen de la ponderación realizada."
+archetype.tooltip.exception-type: "Excepción a la prohibición de tratar categorías especiales de datos (art. 9.2 RGPD)."
+archetype.tooltip.exception-justification: "Explicación de por qué se aplica esta excepción."
+archetype.tooltip.country: "País u organización internacional."
+archetype.tooltip.transfer-recipient: "Destinatario que recibe los datos en el tercer país."
+archetype.tooltip.safeguard: "Garantía en la que se basa la transferencia (arts. 45 a 49 RGPD)."
+archetype.tooltip.safeguard-documentation: "Documentación de las garantías adecuadas (art. 30.1.e RGPD)."
+archetype.tooltip.risk-name: "Descripción breve del riesgo para los derechos y libertades de los interesados."
+archetype.tooltip.risk-description: "Descripción detallada del riesgo: amenaza, consecuencias para los interesados, etc."
+archetype.tooltip.mitigated-by: "Medidas de seguridad que reducen la probabilidad o el impacto del riesgo."
+archetype.tooltip.sector: "El sector público debe publicar su inventario de actividades de tratamiento (art. 31.2 LOPDGDD)."
+archetype.tooltip.rights-exercise: "Cómo pueden ejercer los interesados sus derechos (arts. 15 a 22 RGPD)."
+archetype.tooltip.supervisory-authority: "Autoridad de control ante la que los interesados pueden presentar una reclamación (art. 77 RGPD): la AEPD con carácter general o, para el sector público andaluz, el Consejo de Transparencia y Protección de Datos de Andalucía."
+archetype.tooltip.complaint-url: "Dirección de la sede electrónica donde los interesados pueden presentar una reclamación."
+archetype.tooltip.public-contact: "Dirección de contacto del delegado de protección de datos que se publicará en la información a los interesados."
+archetype.tooltip.data-subject-category-name: "Nombre de la categoría de interesados, p. ej. «Empleados», «Clientes» o «Ciudadanos»."
+archetype.tooltip.vulnerable: "Incluye menores u otros colectivos vulnerables."
+archetype.tooltip.data-category-name: "Nombre de la categoría de datos, p. ej. «Datos bancarios» o «Imagen»."
+archetype.tooltip.data-type: "Tipología de los datos personales."
+archetype.tooltip.recipient-name: "Nombre del destinatario o de la categoría de destinatarios, p. ej. «Agencia Tributaria» o «Gestoría laboral»."
+archetype.tooltip.recipient-type: "Papel del destinatario respecto al tratamiento."
+archetype.tooltip.entity: "Organización destinataria, si se conoce."
+archetype.tooltip.art28-contract: "Hay un contrato de encargo firmado."
+archetype.tooltip.security-measure-name: "Nombre breve de la medida, p. ej. «Control de accesos» o «Copias de seguridad cifradas»."
+archetype.tooltip.ens-measure: "Medida equivalente del Esquema Nacional de Seguridad, p. ej. «op.acc.1» (obligatorio en el sector público, DA 1.ª LOPDGDD)."

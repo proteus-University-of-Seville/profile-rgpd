@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="rat-sec-responsable" classes="section" acceptedChildren=":Proteus-any" acceptedParents=":Proteus-document section">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Responsable del tratamiento]]></stringProperty>
+    <markdownProperty name="comments" category="general"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="EJSrAkpt2Pug"/>
+    <child id="rat-responsable"/>
+    <child id="rat-dpd"/>
+    <child id="8fyvjUex34RF"/>
+  </children>
+</object>

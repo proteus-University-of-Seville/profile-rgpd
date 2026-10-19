@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="tr-boletin" classes="traceable-object international-transfer" acceptedChildren=":Proteus-none" acceptedParents="processing-activity">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Plataforma de boletines (EE. UU.)]]></stringProperty>
+    <stringProperty name="country" category="general" tooltip="country"><![CDATA[Estados Unidos]]></stringProperty>
+    <traceProperty name="transfer-recipient" category="general" tooltip="transfer-recipient" acceptedTargets="recipient" traceType=":Proteus-dependency" maxTargetsNumber="1">
+      <trace target="dst-mailing" traceType=":Proteus-dependency"/>
+    </traceProperty>
+    <enumProperty name="safeguard" category="general" tooltip="safeguard" valueTooltips="True" choices="tbd adequacy-decision standard-contractual-clauses binding-corporate-rules art-49-derogation">adequacy-decision</enumProperty>
+    <markdownProperty name="safeguard-documentation" category="general" tooltip="safeguard-documentation"><![CDATA[Proveedor adherido al Marco de Privacidad de Datos UE-EE. UU.]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

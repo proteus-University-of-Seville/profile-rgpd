@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="rat-sec-medidas" classes="section" acceptedChildren=":Proteus-any" acceptedParents=":Proteus-document section">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Medidas de seguridad]]></stringProperty>
+    <markdownProperty name="comments" category="general"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="rat-guia-medidas"/>
+    <child id="med-accesos"/>
+    <child id="med-copias"/>
+    <child id="med-formacion"/>
+  </children>
+</object>

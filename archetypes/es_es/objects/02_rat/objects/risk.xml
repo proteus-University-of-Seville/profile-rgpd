@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object
+  id="risk"
+  classes="traceable-object risk"
+  acceptedChildren=":Proteus-none"
+  acceptedParents="processing-activity"
+>
+  <properties>
+    <codeProperty name=":Proteus-code" category="general" inmutable="true">
+      <prefix><![CDATA[RSG-]]></prefix>
+      <number>001</number>
+      <suffix><![CDATA[]]></suffix>
+    </codeProperty>
+    <stringProperty name=":Proteus-name" category="general" tooltip="risk-name"><![CDATA[Riesgo]]></stringProperty>
+    <markdownProperty name="description" category="general" tooltip="risk-description"><![CDATA[]]></markdownProperty>
+    <enumProperty name="likelihood" category="general" choices="tbd low medium high">tbd</enumProperty>
+    <enumProperty name="impact" category="general" choices="tbd minor major severe">tbd</enumProperty>
+    <traceProperty name="mitigated-by" category="general" tooltip="mitigated-by" acceptedTargets="security-measure" traceType=":Proteus-dependency"/>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+
+  <children>
+  </children>
+</object>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="rat-sec-actividades" classes="section" acceptedChildren=":Proteus-any" acceptedParents=":Proteus-document section">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Actividades de tratamiento]]></stringProperty>
+    <markdownProperty name="comments" category="general"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="bgaXk4jviLYW"/>
+    <child id="rat-nominas"/>
+    <child id="rat-video"/>
+    <child id="rat-boletin"/>
+  </children>
+</object>

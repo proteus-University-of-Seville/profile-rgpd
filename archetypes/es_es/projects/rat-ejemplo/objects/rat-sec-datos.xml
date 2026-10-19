@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="rat-sec-datos" classes="section" acceptedChildren=":Proteus-any" acceptedParents=":Proteus-document section">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Categorías de datos personales]]></stringProperty>
+    <markdownProperty name="comments" category="general"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children>
+    <child id="BqHku9n5kpsG"/>
+    <child id="dat-identificativos"/>
+    <child id="dat-contacto"/>
+    <child id="dat-bancarios"/>
+    <child id="dat-imagen"/>
+    <child id="dat-salud"/>
+  </children>
+</object>

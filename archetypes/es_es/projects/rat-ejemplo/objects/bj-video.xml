@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<object id="bj-video" classes="legal-basis" acceptedChildren=":Proteus-none" acceptedParents="processing-activity">
+  <properties>
+    <stringProperty name=":Proteus-name" category="general"><![CDATA[Seguridad de las instalaciones]]></stringProperty>
+    <enumProperty name="legal-basis-type" category="general" tooltip="legal-basis-type" valueTooltips="True" choices="tbd consent contract legal-obligation vital-interests public-interest legitimate-interest">public-interest</enumProperty>
+    <stringProperty name="enabling-law" category="general" tooltip="enabling-law"><![CDATA[Art. 22 LOPDGDD]]></stringProperty>
+    <markdownProperty name="justification" category="general" tooltip="legal-basis-justification"><![CDATA[]]></markdownProperty>
+    <markdownProperty name="comments" category="comments"><![CDATA[]]></markdownProperty>
+  </properties>
+  <children/>
+</object>

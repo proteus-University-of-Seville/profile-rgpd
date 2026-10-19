@@ -1,0 +1,16 @@
+# ==========================================================================
+# File: es_es/xslt_templates.yaml
+# Description: Nombres de las plantillas XSLT (vistas) del perfil RGPD
+# Date: 2026/10/18
+# Version: 1.0
+# Author: Amador Durán Toro
+# ==========================================================================
+
+xslt_templates.default: "Registro de actividades"
+xslt_templates.description.default: "Registro completo de actividades de tratamiento (art. 30 RGPD), con riesgos y evaluación."
+xslt_templates.inventario: "Inventario público"
+xslt_templates.description.inventario: "Inventario de las actividades de tratamiento vigentes que debe publicar el sector público (art. 31.2 LOPDGDD)."
+xslt_templates.clausulas: "Cláusulas informativas"
+xslt_templates.description.clausulas: "Información básica a los interesados de cada actividad de tratamiento vigente (arts. 13 y 14 RGPD)."
+xslt_templates.latex: "Documento LaTeX"
+xslt_templates.description.latex: "Plantilla LaTeX usada por los formatos de exportación LaTeX y PDF (a partir de LaTeX)."

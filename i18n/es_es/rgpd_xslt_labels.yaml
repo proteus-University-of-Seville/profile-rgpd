@@ -1,0 +1,33 @@
+# ==========================================================================
+# File: es_es/rgpd_xslt_labels.yaml
+# Description: Textos de las plantillas XSLT del perfil RGPD
+# Date: 2026/10/18
+# Version: 1.0
+# Author: Amador Durán Toro
+# ==========================================================================
+
+xslt.rgpd.legal_bases: "Base jurídica"
+xslt.rgpd.exceptions: "Excepciones (art. 9.2)"
+xslt.rgpd.transfers: "Transferencias internacionales"
+xslt.rgpd.risks: "Riesgos"
+xslt.rgpd.controller: "Responsable"
+xslt.rgpd.purpose: "Finalidad"
+xslt.rgpd.legitimation: "Legitimación"
+xslt.rgpd.retention: "Conservación"
+xslt.rgpd.rights: "Derechos"
+xslt.rgpd.dpo: "Delegado de protección de datos"
+xslt.rgpd.complaint: "Reclamación"
+xslt.rgpd.complaint_text: "Puede presentar una reclamación ante la autoridad de control: {0}."
+xslt.rgpd.no_transfers: "No se prevén transferencias internacionales."
+xslt.rgpd.no_recipients: "No se comunicarán datos a terceros, salvo obligación legal."
+xslt.rgpd.transfer_to: "Transferencia internacional a"
+xslt.rgpd.no_active_activities: "No hay actividades de tratamiento vigentes."
+xslt.rgpd.inventory_title: "Inventario de actividades de tratamiento"
+xslt.rgpd.inventory_intro: "Actividades de tratamiento de datos personales de {0} (art. 31.2 de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales)."
+xslt.rgpd.clauses_title: "Información sobre protección de datos"
+xslt.rgpd.clauses_intro: "Información básica a los interesados sobre el tratamiento de sus datos personales por {0} (arts. 13 y 14 RGPD)."
+
+# Ayuda de las vistas (solo se muestra dentro de PROTEUS)
+xslt.rgpd.view_help_title: "Para qué sirve esta vista."
+xslt.rgpd.inventory_help: "Genera el inventario de actividades de tratamiento que las administraciones y entidades públicas deben publicar en su web (art. 31.2 LOPDGDD). Incluye solo las actividades vigentes y la información del art. 30 RGPD; omite riesgos, evaluaciones de impacto y otros datos internos."
+xslt.rgpd.clauses_help: "Genera la información básica que hay que dar a los interesados al recoger sus datos (arts. 13 y 14 RGPD), según el modelo de información por capas de la AEPD. Hay una cláusula por actividad vigente: copie cada una en el formulario, contrato o cartel donde se recojan esos datos."
